@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akan Name Generator</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Akan Name Generator</h1>
+    <p class="description">
+      Discover your traditional Ghanaian Akan name based on your birthdate and gender.
+    </p>
+  </header>
+
+  <main>
+    <!-- Form Section -->
+    <section aria-labelledby="form-title">
+      <h2 id="form-title" class="visually-hidden">User Information Form</h2>
+      <form id="akanForm">
+        <div class="form-group">
+          <label for="birthdate">Date of Birth:</label>
+          <input type="date" id="birthdate" name="birthdate" required />
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">-- Select Gender --</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+
+        <button type="submit">Get Akan Name</button>
+      </form>
+    </section>
+
+    <!-- Result Section -->
+    <section aria-labelledby="result-title" id="resultSection">
+      <h2 id="result-title" class="visually-hidden">Akan Name Result</h2>
+      <p id="result" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Akan Name Generator. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
